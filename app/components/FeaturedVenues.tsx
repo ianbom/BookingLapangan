@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FeaturedVenues() {
     const venues = [
@@ -52,7 +53,7 @@ export default function FeaturedVenues() {
                         <p className="text-gray-500">Lapangan terbaik pilihan untukmu.</p>
                     </div>
                     <a
-                        href="#"
+                        href="/venues"
                         className="hidden sm:flex items-center gap-1 text-primary font-bold hover:underline"
                     >
                         Lihat semua
@@ -129,9 +130,12 @@ export default function FeaturedVenues() {
                                             </span>
                                         </span>
                                     </div>
+                                    <Link href={`/venues/1`}>
                                     <button className="bg-primary hover:bg-[#0fd650] text-background-dark font-bold py-2 px-4 rounded-lg text-sm transition-colors cursor-pointer">
                                         Pesan Sekarang
                                     </button>
+                                    </Link>
+                                    
                                 </div>
                             </div>
                         </div>

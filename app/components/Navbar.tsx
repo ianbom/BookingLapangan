@@ -25,19 +25,25 @@ export default function Navbar() {
                     <div className="hidden md:flex flex-1 justify-end items-center gap-8">
                         <div className="flex items-center gap-8">
                             <Link
+                                href="/"
+                                className="text-sm font-medium hover:text-primary transition-colors"
+                            >
+                                Home
+                            </Link>
+                            <Link
                                 href="/venues"
                                 className="text-sm font-medium hover:text-primary transition-colors"
                             >
                                 Sewa Lapangan
                             </Link>
                             <Link
-                                href="#"
+                                href="/about"
                                 className="text-sm font-medium hover:text-primary transition-colors"
                             >
                                 Tentang
                             </Link>
                             <Link
-                                href="#"
+                                href="/contact"
                                 className="text-sm font-medium hover:text-primary transition-colors"
                             >
                                 Kontak

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function BookingSummaryCard() {
@@ -84,12 +85,15 @@ export default function BookingSummaryCard() {
             </div>
             {/* Action Button */}
             <div className="p-5 pt-2">
-                <button className="w-full bg-primary hover:bg-[#0eb545] active:bg-[#0da643] text-text-main font-bold text-lg py-4 px-6 rounded-lg shadow-md transition-all flex items-center justify-center gap-2 group cursor-pointer">
-                    LANJUTKAN BOOKING
-                    <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
-                        arrow_forward
-                    </span>
-                </button>
+                <Link href={'/venues/1/book/details'}>
+                    <button className="w-full bg-primary hover:bg-[#0eb545] active:bg-[#0da643] text-text-main font-bold text-lg py-4 px-6 rounded-lg shadow-md transition-all flex items-center justify-center gap-2 group cursor-pointer">
+                        LANJUTKAN BOOKING
+                        <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+                            arrow_forward
+                        </span>
+                    </button>
+                </Link>
+
             </div>
         </div>
     );

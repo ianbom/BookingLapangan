@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function SearchWidget() {
@@ -70,7 +71,8 @@ export default function SearchWidget() {
                             className="w-full h-12 bg-primary hover:bg-[#0fd650] text-background-dark font-bold rounded-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 cursor-pointer"
                         >
                             <span className="material-symbols-outlined">search</span>
-                            <span>Cari</span>
+                            <Link href="/venues"> <span>Cari</span></Link>
+                           
                         </button>
                     </div>
                 </form>

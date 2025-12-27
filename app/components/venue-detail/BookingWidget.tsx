@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function BookingWidget() {
@@ -64,9 +65,12 @@ export default function BookingWidget() {
                     <span className="font-bold text-text-main">Rp 150.000</span>
                 </div>
                 {/* CTA */}
+                <Link href={'/venues/1/book'}>
                 <button className="w-full bg-primary hover:bg-[#0fd650] text-text-main text-base font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98] cursor-pointer">
                     PESAN SEKARANG
                 </button>
+                </Link>
+                
             </div>
         </div>
     );

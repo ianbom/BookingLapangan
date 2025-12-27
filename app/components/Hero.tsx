@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -27,7 +28,7 @@ export default function Hero() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <button className="h-12 px-8 bg-primary hover:bg-[#0fd650] text-background-dark font-bold rounded-lg transition-all flex items-center gap-2">
-                        <span>Cari Lapangan</span>
+                        <Link href="/venues">Cari Lapangan</Link>
                         <span
                             className="material-symbols-outlined"
                             style={{ fontSize: "20px" }}
