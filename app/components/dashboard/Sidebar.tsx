@@ -3,18 +3,8 @@ import React from "react";
 
 export default function Sidebar() {
     return (
-        <aside className="w-72 hidden md:flex flex-col border-r border-[#e2e8f0] bg-surface-light h-screen sticky top-0">
+        <aside className="w-72 hidden md:flex flex-col border-r border-[#e2e8f0] bg-surface-light shrink-0">
             <div className="p-6">
-                {/* Brand / Logo Area */}
-                <div className="flex items-center gap-2 mb-8 text-text-main">
-                    <span
-                        className="material-symbols-outlined text-primary"
-                        style={{ fontSize: "32px" }}
-                    >
-                        sports_soccer
-                    </span>
-                    <span className="text-xl font-bold tracking-tight">SportBook</span>
-                </div>
                 {/* User Profile Summary */}
                 <div className="flex items-center gap-3 mb-8 p-3 bg-background-light rounded-xl border border-[#e2e8f0]">
                     <div className="relative">
@@ -83,12 +73,6 @@ export default function Sidebar() {
                         <span className="text-sm font-medium">Keluar</span>
                     </Link>
                 </nav>
-            </div>
-            {/* Sidebar Footer */}
-            <div className="mt-auto p-6 border-t border-[#e2e8f0]">
-                <p className="text-xs text-gray-400 text-center">
-                    © 2023 SportBook Inc.
-                </p>
             </div>
         </aside>
     );

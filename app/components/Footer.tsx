@@ -60,33 +60,24 @@ export default function Footer() {
                                     href="#"
                                     className="text-gray-400 hover:text-primary transition-colors"
                                 >
+                                    Home
+                                </Link>
+                                <Link
+                                    href="about"
+                                    className="text-gray-400 hover:text-primary transition-colors"
+                                >
                                     Tentang Kami
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                    href="#"
+                                    href="contact"
                                     className="text-gray-400 hover:text-primary transition-colors"
                                 >
-                                    Karir
+                                    Kontak
                                 </Link>
                             </li>
-                            <li>
-                                <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-primary transition-colors"
-                                >
-                                    Blog
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-primary transition-colors"
-                                >
-                                    Mitra
-                                </Link>
-                            </li>
+
                         </ul>
                     </div>
 
@@ -130,7 +121,7 @@ export default function Footer() {
                     </div>
 
                     {/* Column 4 */}
-                    <div>
+                    {/* <div>
                         <h3 className="font-bold text-lg mb-4">Unduh Aplikasi</h3>
                         <p className="text-gray-400 text-sm mb-4">
                             Unduh sekarang untuk pengalaman booking terbaik.
@@ -155,7 +146,7 @@ export default function Footer() {
                                 </div>
                             </button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
